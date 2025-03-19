@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vMedia - Book Vetted Photographers On Demand</title>
+    <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64,AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAQAABILAAASCwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABycnKqcnJy/3Jycv9ycnL/cnJy/3Jycv9ycnL/cnJy/3Jycv9ycnKqAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHJycp5ycnL/cnJy/3Jycv9ycnL/cnJy/3Jycv9ycnL/cnJy/3JycqoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAcnJynnJycv9ycnL/cnJy/3Jycv9ycnL/cnJy/3Jycv9ycnL/cnJyqgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABycnKecnJy/3Jycv9ycnL/cnJy/3Jycv9ycnL/cnJy/3Jycv9ycnKqAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHJycp5ycnL/cnJy/3Jycv9ycnL/cnJy/3Jycv9ycnL/cnJy/3JycqoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAcnJynnJycv9ycnL/cnJy/3Jycv9ycnL/cnJy/3Jycv9ycnL/cnJyqgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABycnKecnJy/3Jycv9ycnL/cnJy/3Jycv9ycnL/cnJy/3Jycv9ycnKqAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHJycp5ycnL/cnJy/3Jycv9ycnL/cnJy/3Jycv9ycnL/cnJy/3JycqoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAcnJynnJycv9ycnL/cnJy/3Jycv9ycnL/cnJy/3Jycv9ycnL/cnJyqgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABycnKecnJy/3Jycv9ycnL/cnJy/3Jycv9ycnL/cnJy/3Jycv9ycnKqAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHJycp5ycnL/cnJy/3Jycv9ycnL/cnJy/3Jycv9ycnL/cnJy/3JycqoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAcnJynnJycv9ycnL/cnJy/3Jycv9ycnL/cnJy/3Jycv9ycnL/cnJyqgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABycnJycnJy/3Jycv9ycnL/cnJy/3Jycv9ycnL/cnJy/3Jycv9ycnJyAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA//8AAP//AAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA//8AAA==">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .hero-gradient {
+            background: linear-gradient(135deg, #1a237e 0%, #0d47a1 50%, #01579b 100%);
+        }
+    </style>
+</head>
+<body class="bg-white">
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-white z-50 shadow-sm">
+        <div class="container mx-auto px-4 py-3">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center">
+                    <a href="/" class="text-2xl font-bold text-blue-600">vMedia</a>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#" class="text-gray-600 hover:text-gray-900">How it Works</a>
+                    <a href="#" class="text-gray-600 hover:text-gray-900">Pricing</a>
+                    <a href="#" class="text-gray-600 hover:text-gray-900">For Business</a>
+                    <button class="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition duration-300">
+                        Login <i class="fas fa-arrow-right ml-2"></i>
+                    </button>
+                </div>
+                <div class="md:hidden">
+                    <button class="text-gray-600">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative h-screen hero-gradient">
+        <div class="absolute inset-0 bg-black opacity-30"></div>
+        <div class="container mx-auto px-4 h-full flex items-center relative z-10">
+            <div class="max-w-3xl">
+                <h1 class="text-5xl md:text-6xl font-bold text-white mb-6">
+                    vMedia gives you visual content superpowers
+                </h1>
+                <p class="text-xl text-gray-200 mb-8">
+                    vMedia is the one-stop-shop for visual content creation. From on-demand photoshoots to on-demand editing to automating massive workflows.
+                </p>
+                <div class="bg-white p-4 rounded-lg shadow-lg max-w-2xl">
+                    <div class="flex flex-col md:flex-row gap-4">
+                        <div class="flex-grow">
+                            <input type="text" placeholder="Enter your location" 
+                                class="w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                            >
+                        </div>
+                        <button class="bg-blue-600 text-white px-8 py-3 rounded-lg hover:bg-blue-700 transition duration-300">
+                            Search
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="p-6 rounded-lg">
+                    <div class="text-blue-600 mb-4">
+                        <i class="fas fa-camera text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Professional Photographers</h3>
+                    <p class="text-gray-600">Book vetted photographers for any occasion. Our network of professionals ensures quality results.</p>
+                </div>
+                <div class="p-6 rounded-lg">
+                    <div class="text-blue-600 mb-4">
+                        <i class="fas fa-clock text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Quick Turnaround</h3>
+                    <p class="text-gray-600">Get your edited photos within 48 hours. Fast, reliable, and professional service.</p>
+                </div>
+                <div class="p-6 rounded-lg">
+                    <div class="text-blue-600 mb-4">
+                        <i class="fas fa-shield-alt text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">100% Guarantee</h3>
+                    <p class="text-gray-600">Not happy with the results? We'll make it right or give you your money back.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center max-w-3xl mx-auto">
+                <h2 class="text-4xl font-bold mb-6">Ready to get started?</h2>
+                <p class="text-xl text-gray-600 mb-8">Join thousands of satisfied customers who trust vMedia for their visual content needs.</p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <button class="bg-blue-600 text-white px-8 py-3 rounded-lg hover:bg-blue-700 transition duration-300">
+                        I need a photoshoot right now <i class="fas fa-arrow-right ml-2"></i>
+                    </button>
+                    <button class="bg-gray-800 text-white px-8 py-3 rounded-lg hover:bg-gray-900 transition duration-300">
+                        I have a high volume content need <i class="fas fa-arrow-right ml-2"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">vMedia</h3>
+                    <p class="text-gray-400">Professional photography services on demand.</p>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Company</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white">About Us</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Careers</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Services</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white">Photography</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Editing</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Enterprise</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Follow Us</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
+                <p>&copy; 2024 vMedia. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Add smooth scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
